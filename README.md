@@ -10,7 +10,7 @@
 
 - 使用flyway来管理数据库版本
 
-- 自定义autoconfiguration来管理dao自动配置
+- 自定义autoconfiguration来进行dao自动配置
 
 - 自定义starter对业务引用jar包依赖进行管理
 
