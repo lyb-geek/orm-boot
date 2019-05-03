@@ -2,11 +2,11 @@
 
 - mybatis入门
 
-     mybatis使用mybatis-generator-maven-plugin进行entity、dao、xml自动生成
+    使用mybatis-generator-maven-plugin进行entity、dao、xml自动生成
 
 - spring data jpa入门
 
-     jpa通过自定义注解IgnoreNullValue 来配置jpa进行UPDATE时，如果属性存在NULL值，按需更新，当IgnoreNullValue(TRUE)时，则忽略NULL值更新
+     通过自定义注解IgnoreNullValue来配置字段值为null值，按需更新。当jpa进行UPDATE时，如果字段值存在NULL值，IgnoreNullValue(TRUE)，则忽略字段值为NULL值的属性更新
 
 - 使用flyway来管理数据库版本
 
