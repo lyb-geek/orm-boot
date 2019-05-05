@@ -40,4 +40,16 @@ CREATE TABLE `t_user` (
 
 insert  into `t_user`(`id`,`user_name`,`sex`,`domain`,`dept_name`,`email`,`mobile`,`create_time`,`update_time`) values (1,'张三','男','geek.lyb.cn','oa产品部','zhangsan@geek.lyb.cn','18800000001','2019-04-28 02:53:06','2019-04-28 02:53:06'),(2,'李四','男','geek.lyb.cn','CRM产品部','lisi@geek.lyb.cn','18800000002','2019-04-28 02:54:56','2019-04-28 02:54:56'),(3,'王珊','女','geek.lyb.cn','邮局产品部','wangshan@geek.lyb.cn','18800000003','2019-04-28 02:58:40','2019-04-28 02:58:40'),(4,'王达车','男','geek.lyb.cn','建站事业部','wangdache@geek.lyb.cn','18800000004','2019-04-28 03:02:44','2019-04-28 03:02:44'),(5,'陈文茵','女','geek.lyb.test.cn','oa产品部','chenwenyin1@geek.lyb.cn','18800000006','2019-04-28 03:04:01','2019-04-28 03:07:49');
 
+DROP TABLE IF EXISTS `t_domain`;
 
+CREATE TABLE `t_domain` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `domain_name` varchar(500) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+/*Data for the table `t_domain` */
+
+insert  into `t_domain`(`id`,`domain_name`,`create_time`,`update_time`) values (1,'geek.lyb..cn','2019-04-29 14:20:10','2019-04-29 14:20:10'),(2,'test.cn','2019-04-29 03:18:43','2019-04-29 03:18:43'),(3,'onetest.cn','2019-04-29 03:19:22','2019-04-29 03:29:49'),(4,'demo.cn','2019-04-29 03:20:06','2019-04-29 03:20:06'),(5,'beta.cn','2019-04-29 03:21:01','2019-04-29 03:21:01');
