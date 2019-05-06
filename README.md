@@ -3,6 +3,10 @@
 - mybatis入门
 
     使用mybatis-generator-maven-plugin进行entity、dao、xml自动生成
+    
+- mybatisplus入门
+
+    使用com.geek.lyb.demo.orm.mybatisplus.util.MybatisPlusCodeGenerator进行entity、dao、service、controller、xml自动生成
 
 - spring data jpa入门
 
