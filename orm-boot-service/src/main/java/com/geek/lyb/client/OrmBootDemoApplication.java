@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.geek.lyb.demo.orm.mybatis.dao")
+@MapperScan(basePackages = {"com.geek.lyb.demo.orm.mybatis.dao","com.geek.lyb.demo.orm.mybatisplus.dao"})
 @EnableJpaRepositories(basePackages = "com.geek.lyb.demo.orm.jpa.dao", repositoryBaseClass = CustomSimpleJpaRepository.class)
 @EntityScan(basePackages = "com.geek.lyb.demo.orm.jpa.model")
 @EnableTransactionManagement

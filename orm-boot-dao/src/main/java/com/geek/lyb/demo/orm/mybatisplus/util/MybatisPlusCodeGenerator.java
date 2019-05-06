@@ -11,7 +11,6 @@ import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -39,17 +38,16 @@ public class MybatisPlusCodeGenerator {
     }
 
     public static void main(String[] args) {
-       // String projectName = scanner("项目路径");
-        String projectName = "orm-boot-dao";
-        File file = new File(projectName);
-        String projectPath = file.getAbsolutePath();
-        System.out.println("projectPath:"+projectPath);
+
 
         // 代码生成器
         AutoGenerator mpg = new AutoGenerator();
 
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
+        String basePath = MybatisPlusCodeGenerator.class.getResource("").getPath();
+        String projectPath = basePath.substring(0, basePath.indexOf("/target"));
+        System.out.println("projectPath:"+projectPath);
         //projectPath = System.getProperty("user.dir");
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("lyb-geek");
