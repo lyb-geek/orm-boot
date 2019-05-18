@@ -20,7 +20,7 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .version("1.0")
                 .title("rest API在线接口文档 ")
-                .description("构建ORM相关的rest API 在线接口文档")
+                .description("构建数据存储相关的rest API 在线接口文档")
                 .contact(new Contact("orm","http://localhost:8080","orm@geek.lyb.cn"))
                 .termsOfServiceUrl("http://www.geek.lyb.cn").build();
     }
@@ -29,6 +29,7 @@ public class SwaggerConfig {
     @Bean
     public Docket createRestApi(){
         return new Docket(DocumentationType.SWAGGER_2)
+                .useDefaultResponseMessages(false)
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.geek.lyb.client.controller"))
