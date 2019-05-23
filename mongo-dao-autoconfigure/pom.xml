@@ -9,37 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>orm-hello-spring-boot-starter</artifactId>
-    <packaging>pom</packaging>
-
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
-
-
+    <artifactId>mongo-dao-autoconfigure</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>com.geek.lyb</groupId>
-            <artifactId>orm-boot-dao-autoconfigure</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.geek.lyb</groupId>
-            <artifactId>mongo-dao-autoconfigure</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.geek.lyb</groupId>
-            <artifactId>orm-boot-dao</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
 
         <dependency>
             <groupId>com.geek.lyb</groupId>
             <artifactId>mongo-boot-dao</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

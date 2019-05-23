@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.geek.lyb.orm.dao.autoconfigure.OrmAutoConfiguration
+com.geek.lyb.mongo.dao.autoconfigure.MongoAutoConfiguration

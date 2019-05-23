@@ -1,4 +1,4 @@
-package com.geek.lyb.autoconfigure;
+package com.geek.lyb.orm.dao.autoconfigure;
 
 import com.geek.lyb.demo.orm.jpa.dao.UserFileDao;
 import com.geek.lyb.demo.orm.mybatis.dao.UserDao;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Slf4j
-public class DaoAutoConfiguration {
+public class OrmAutoConfiguration {
 
 
     @Bean

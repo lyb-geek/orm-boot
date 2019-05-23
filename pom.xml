@@ -9,6 +9,7 @@
         <module>orm-boot-dao-autoconfigure</module>
         <module>orm-hello-spring-boot-starter</module>
         <module>mongo-boot-dao</module>
+        <module>mongo-dao-autoconfigure</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
